@@ -1,10 +1,11 @@
+---
 name: Deploy to GCP VM
 
 on:
   push:
     branches:
       - main
-    workflow_dispatch:
+  workflow_dispatch: true
 
 jobs:
   deploy:
@@ -21,11 +22,13 @@ jobs:
 
       - name: Test SSH connection
         run: |
-          ssh -v -o StrictHostKeyChecking=no sabyasachigolu@34.47.223.176 "echo 'SSH is working'"
+          ssh -v -o StrictHostKeyChecking=no \
+            sabyasachigolu@34.47.223.176 "echo 'SSH is working'"
 
       - name: Deploy to GCP VM
         run: |
-          ssh -o StrictHostKeyChecking=no sabyasachigolu@34.47.223.176 << 'EOF'
+          ssh -o StrictHostKeyChecking=no \
+            sabyasachigolu@34.47.223.176 << 'EOF'
             cd ~/Test/vite-project
             git pull origin main
             npm install
