@@ -10,7 +10,6 @@ const Dashboard = () => {
           <li>Home</li>
           <li>Profile</li>
           <li>Settings</li>
-          <li>LogOut</li>
         </ul>
       </div>
       {/* Main Content */}
