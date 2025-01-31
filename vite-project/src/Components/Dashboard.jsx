@@ -11,6 +11,7 @@ const Dashboard = () => {
           <li>Profile</li>
           <li>Settings</li>
           <li>Check this</li>
+          <li>LogOut</li>
         </ul>
       </div>
       {/* Main Content */}
