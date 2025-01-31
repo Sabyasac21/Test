@@ -20,12 +20,7 @@ const Dashboard = () => {
       {/* Main Content */}
       <div className="main-content">
         {/* Header */}
-        <div className="header">
-          <button className="back-button" onClick={() => navigate("/")}>
-            Back
-          </button>
-          Simple Dashboard
-        </div>
+        <div className="header">Simple Dashboard</div>
         {/* Content */}
         <div className="content">
           <p>Welcome to the dashboard. Here you can manage your content.</p>
