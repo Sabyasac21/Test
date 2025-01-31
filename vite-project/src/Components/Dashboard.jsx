@@ -1,10 +1,6 @@
-// import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="dashboard-container">
       {/* Sidebar */}
